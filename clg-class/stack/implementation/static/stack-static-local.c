@@ -25,19 +25,19 @@ int main()
         switch (ch)
         {
         case 1:
-            top = push(stack[Max], top);
+            top = push(stack, top);
             break;
 
         case 2:
-            top = pop(stack[Max], top);
+            top = pop(stack, top);
             break;
 
         case 3:
-            top = peak(stack[Max], top);
+            top = peak(stack, top);
             break;
 
         case 4:
-            top = display(stack[Max], top);
+            top = display(stack, top);
             break;
 
         case 5:
