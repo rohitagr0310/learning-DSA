@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/rohit/OneDrive/Documents/Learning/Learning-DSA/class/stack/application/infix-postfix",
-      "program": "c:/Users/rohit/OneDrive/Documents/Learning/Learning-DSA/class/stack/application/infix-postfix/build/Debug/outDebug",
+      "cwd": "c:/Users/rohit/OneDrive/Documents/Learning/Learning-DSA/clg-class/stack",
+      "program": "c:/Users/rohit/OneDrive/Documents/Learning/Learning-DSA/clg-class/stack/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
