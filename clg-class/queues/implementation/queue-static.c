@@ -1,8 +1,12 @@
 #include <stdio.h>
+#include <process.h>
+
+#define MAX 50
+
 void enqueue();
 void dequeue();
 void display();
-int queue[50], rear = -1, front = -1;
+int queue[MAX], rear = -1, front = -1;
 
 int main()
 {
