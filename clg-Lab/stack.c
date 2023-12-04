@@ -42,7 +42,7 @@ int main()
         {
             exit(0);
         }
-        defaut:
+        default:
         {
             printf("\nwrong choice");
         }
