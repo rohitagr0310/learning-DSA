@@ -1,17 +1,15 @@
 #include <stdio.h>
-int main()
+
+int binary_search(int arr[], int element, int high, int low)
 {
-    int arr[5] = {1, 2, 3, 4, 5}, n = 5, ele = 4;
-    int low = 0, high = n - 1, mid;
     while (low <= high)
     {
-        mid = (low + high) / 2;
-        if (arr[mid] == ele)
+        int mid = (low + high) / 2;
+        if (arr[mid] == element)
         {
-            printf("found at %d", mid + 1);
-            break;
+            return mid;
         }
-        else if (arr[mid] > ele)
+        else if (arr[mid] > element)
         {
             high = mid - 1;
         }
@@ -20,8 +18,32 @@ int main()
             low = mid + 1;
         }
     }
-    if (low > high)
+
+    return -1;
+}
+
+int main()
+{
+    int arr[5] = {0, 1, 2, 3, 4, 5, 6};
+
+    int n = sizeof(arr) / sizeof(arr[0]);
+
+    int element;
+
+    printf("Element to search: ");
+    scanf("%d", &element);
+
+    int low = 0, high = n - 1;
+    int result = binary_search(arr, element, high, low);
+
+    if (result == -1)
     {
-        printf("not found");
+        printf("Element not found ");
     }
+    else
+    {
+        printf("Element is present at index %d ", result);
+    }
+
+    return 0;
 }
